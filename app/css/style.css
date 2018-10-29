@@ -1,0 +1,261 @@
+body {
+  position: relative;
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+section {
+  padding: 40px 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  margin: 0; }
+
+h3 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+header {
+  background-color: #213338;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  header .menu-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      header .menu-nav.show .menu {
+        -webkit-transform: translateX(0);
+        transform: translateX(0); } }
+    header .menu-nav .menu ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      list-style: none; }
+      @media (max-width: 767px) {
+        header .menu-nav .menu ul {
+          display: inline-block; } }
+      header .menu-nav .menu ul .items a {
+        color: #ffffff;
+        font-size: 23px;
+        font-weight: 900;
+        text-decoration: none;
+        padding: 0 30px; }
+        header .menu-nav .menu ul .items a.active {
+          color: #97f6ff; }
+        header .menu-nav .menu ul .items a:hover {
+          color: #97f6ff; }
+    @media (max-width: 767px) {
+      header .menu-nav .menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.95);
+        top: 0;
+        left: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-transition: -webkit-transform 0.2s ease-in-out;
+        transition: -webkit-transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; } }
+    header .menu-nav .toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      padding: 10px; }
+      @media (max-width: 767px) {
+        header .menu-nav .toggle {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          z-index: 100; }
+          header .menu-nav .toggle span {
+            width: 100%;
+            height: 3px;
+            background-color: #ffffff; } }
+
+section {
+  height: 100vw; }
+
+section.game .game-bg {
+  width: 100%;
+  height: 785px;
+  background-color: #1ac2ef; }
+  section.game .game-bg .game-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-content: center;
+    padding-top: 55px; }
+    section.game .game-bg .game-title img {
+      width: 621px;
+      height: 100px; }
+  section.game .game-bg .game-content-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    section.game .game-bg .game-content-wrapper .game-carousel {
+      width: 33%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      /* Slideshow container */
+      /* Next & previous buttons */
+      /* Position the "next button" to the right */
+      /* On hover, add a black background color with a little bit see-through */
+      /* Caption text */
+      /* Number text (1/3 etc) */
+      /* The dots/bullets/indicators */
+      /* On smaller screens, decrease text size */ }
+      section.game .game-bg .game-content-wrapper .game-carousel .mySlides {
+        display: none; }
+        section.game .game-bg .game-content-wrapper .game-carousel .mySlides img {
+          width: 330px;
+          height: 50px; }
+      section.game .game-bg .game-content-wrapper .game-carousel .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto; }
+      section.game .game-bg .game-content-wrapper .game-carousel .prev, section.game .game-bg .game-content-wrapper .game-carousel .next {
+        cursor: pointer;
+        padding: 16px;
+        margin-top: -22px;
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0; }
+      section.game .game-bg .game-content-wrapper .game-carousel .next {
+        right: 0;
+        border-radius: 3px 0 0 3px; }
+      section.game .game-bg .game-content-wrapper .game-carousel .prev:hover, section.game .game-bg .game-content-wrapper .game-carousel .next:hover {
+        background-color: rgba(0, 0, 0, 0.8); }
+      section.game .game-bg .game-content-wrapper .game-carousel .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center; }
+      section.game .game-bg .game-content-wrapper .game-carousel .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0; }
+      section.game .game-bg .game-content-wrapper .game-carousel .slider-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+      section.game .game-bg .game-content-wrapper .game-carousel .dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        -webkit-transition: background-color 0.6s ease;
+        transition: background-color 0.6s ease; }
+      section.game .game-bg .game-content-wrapper .game-carousel .active, section.game .game-bg .game-content-wrapper .game-carousel .dot:hover {
+        background-color: #717171; }
+      @media only screen and (max-width: 300px) {
+        section.game .game-bg .game-content-wrapper .game-carousel .prev, section.game .game-bg .game-content-wrapper .game-carousel .next, section.game .game-bg .game-content-wrapper .game-carousel .text {
+          font-size: 11px; } }
+    section.game .game-bg .game-content-wrapper .game-content-logo {
+      width: 33%; }
+      section.game .game-bg .game-content-wrapper .game-content-logo img {
+        width: 350px; }
+    section.game .game-bg .game-content-wrapper .game-content-buy {
+      width: 33%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      section.game .game-bg .game-content-wrapper .game-content-buy span {
+        color: #ffffff;
+        font-family: 'PT Serif', serif; }
+      section.game .game-bg .game-content-wrapper .game-content-buy span.currency {
+        font-size: 60px; }

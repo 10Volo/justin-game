@@ -5,8 +5,97 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400i,700i|Roboto:400,500,700,900" rel="stylesheet">	<link rel="stylesheet" href="app/css/style.css">
 </head>
 <body>
-
+	<header>
+			<div class="menu-nav">
+				<div class="menu">
+					<ul>
+						<li class="items"><a href="#1">The Game</a></li>
+						<li class="items"><a href="#2">How it Works</a></li>
+						<li class="items"><a href="#3">What you’ll get</a></li>
+						<li class="items"><a href="#4">Order Now</a></li>
+					</ul>
+				</div>
+				<div class="toggle"  onclick="menu_toggle(this.parentNode)">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+	</header>
+	
+	<section id="1" class="game">
+		<!--<div class="bg-curved">-->
+			<!--<svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">-->
+				<!--<defs>-->
+					<!--<linearGradient id="Gradient1" x1="0" x2="1" y1="0" y2="1">-->
+						<!--<stop offset="100%" stop-color="#1ac2ef"/>-->
+						<!--<stop offset="100%" stop-color="#1ac2ef"/>-->
+					<!--</linearGradient>-->
+				<!--</defs>-->
+				<!--<path d="M0,90 C150,25 350,150 500,80 L500,00 L0,0 Z" style="stroke: none; fill:url(#Gradient1);"></path>-->
+			<!--</svg>-->
+		<!--</div>-->
+		<div class="game-bg">
+			<div class="game-title"><img src="app/img/logo.png" srcset="app/img/logo@2x.png" alt=""></div>
+			<div class="container">
+					<div class="game-content-wrapper">
+						<div class="game-carousel">
+							<div class="slideshow-container">
+								<div class="mySlides">
+									<p>"Vial, repugnant, and
+										VERY problematic1"</p>
+									<img src="app/img/w-post.png" alt="">
+								</div>
+								<div class="mySlides">
+									<p>"Vial, repugnant, and
+										VERY problematic2"</p>
+									<img src="app/img/w-post.png" alt="">
+								</div>
+								<div class="mySlides">
+									<p>"Vial, repugnant, and
+										VERY problematic3"</p>
+									<img src="app/img/w-post.png" alt="">
+								</div>
+								<div class="mySlides">
+									<p>"Vial, repugnant, and
+										VERY problematic"</p>
+									<img src="app/img/w-post.png" alt="">
+								</div>
+							</div>
+							<br>
+							<div class="slider-nav" style="text-align:center">
+								<div>
+									<span class="dot" onclick="currentSlide(1)"></span>
+									<span class="dot" onclick="currentSlide(2)"></span>
+									<span class="dot" onclick="currentSlide(3)"></span>
+									<span class="dot" onclick="currentSlide(4)"></span>
+								</div>
+							</div>
+						</div>
+						<div class="game-content-logo">
+							<img src="app/img/product-1.png" srcset="app/img/product-1@2x.png" alt="">
+						</div>
+						<div class="game-content-buy">
+							<span class="currency">$</span><span class="count">22</span><span class="country">USD</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="2" class="how">2</section>
+	<section id="3" class="get">3</section>
+	<section id="4" class="order">4</section>
+	<footer></footer>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/669264/owl.carousel.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<script src="app/js/main.js"></script>
 </body>
 </html>

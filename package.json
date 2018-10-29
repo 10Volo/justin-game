@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/10Volo/justin-game/issues"
   },
-  "homepage": "https://github.com/10Volo/justin-game#readme"
+  "homepage": "https://github.com/10Volo/justin-game#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.9.4",
+    "precss": "^3.1.2"
+  },
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  }
 }
