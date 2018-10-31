@@ -29,6 +29,9 @@ h3 {
 p {
   margin: 0; }
 
+h1 {
+  font-family: AktivGrotesk-Black; }
+
 header {
   background-color: #213338;
   width: 100%;
@@ -77,7 +80,13 @@ header {
         font-size: 23px;
         font-weight: 900;
         text-decoration: none;
-        padding: 0 30px; }
+        padding: 0 30px;
+        font-family: AktivGrotesk-XBold;
+        font-weight: 400; }
+        @media (max-width: 800px) {
+          header .menu-nav .menu ul .items a {
+            font-size: 20px;
+            padding: 0 20px; } }
         header .menu-nav .menu ul .items a.active {
           color: #97f6ff; }
         header .menu-nav .menu ul .items a:hover {
@@ -232,7 +241,7 @@ section.game {
             align-items: center; }
             section.game .game-bg .game-content-wrapper .game-items .game-carousel .mySlides p {
               color: #ffffff;
-              font-family: 'PT Serif', serif;
+              font-family: Georgia;
               font-size: 35px;
               margin-bottom: 30px; }
               @media (max-width: 414px) {
@@ -311,7 +320,7 @@ section.game {
             text-align: center; } }
         section.game .game-bg .game-content-wrapper .game-items .game-content-buy .game-span-wrapper span {
           color: #ffffff;
-          font-family: 'PT Serif', serif; }
+          font-family: Georgia; }
         section.game .game-bg .game-content-wrapper .game-items .game-content-buy .game-span-wrapper .currency {
           font-size: 70px; }
           @media (max-width: 767px) {
@@ -378,6 +387,12 @@ section.game {
       @media (max-width: 414px) {
         section.game .game-card .game-card-item img {
           width: 75px; } }
+      @media (max-width: 375px) {
+        section.game .game-card .game-card-item img {
+          width: 65px; } }
+      @media (max-width: 320px) {
+        section.game .game-card .game-card-item img {
+          width: 58px; } }
   section.game .game-describe {
     display: -webkit-box;
     display: -webkit-flex;
@@ -395,12 +410,16 @@ section.game {
     section.game .game-describe .game-disc-title {
       width: 570px;
       margin-bottom: 15px; }
+      @media (max-width: 414px) {
+        section.game .game-describe .game-disc-title {
+          width: auto; } }
       section.game .game-describe .game-disc-title h3 {
         color: #213338;
-        font-family: 'Roboto', sans-serif;
+        font-family: AktivGrotesk-XBold;
         font-size: 50px;
         font-weight: 900;
-        text-align: center; }
+        text-align: center;
+        font-weight: 400; }
         @media (max-width: 767px) {
           section.game .game-describe .game-disc-title h3 {
             font-size: 40px; } }
@@ -411,8 +430,9 @@ section.game {
           width: auto; } }
       section.game .game-describe .game-disc-par p {
         color: #213338;
-        font-family: 'Roboto', sans-serif;
+        font-family: AktivGrotesk-Regular;
         font-size: 25px;
+        font-weight: 300;
         text-align: center;
         line-height: 1.92; }
         @media (max-width: 767px) {
@@ -429,9 +449,9 @@ section.how {
     margin-bottom: 50px; }
     section.how .how-title h3 {
       color: #213338;
-      font-family: 'Roboto', sans-serif;
+      font-family: AktivGrotesk-XBold;
       font-size: 51px;
-      font-weight: 900;
+      font-weight: 400;
       text-align: center; }
   section.how .how-items {
     display: -webkit-box;
@@ -468,7 +488,7 @@ section.how {
           -ms-flex-align: center;
           align-items: center; } }
       section.how .how-items .how-item:nth-child(1) .how-item-img img {
-        width: 230px; }
+        width: 280px; }
       section.how .how-items .how-item:nth-child(2) .how-item-img {
         position: absolute; }
         section.how .how-items .how-item:nth-child(2) .how-item-img img {
@@ -506,29 +526,36 @@ section.how {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+        @media (max-width: 414px) {
+          section.how .how-items .how-item:nth-child(3) .how-item-img {
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center; } }
         section.how .how-items .how-item:nth-child(3) .how-item-img img {
           width: 160px;
           height: 220px; }
       section.how .how-items .how-item:nth-of-type(1) .how-item-title {
         width: 325px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-top: 44px; }
         @media (max-width: 768px) {
           section.how .how-items .how-item:nth-of-type(1) .how-item-title {
             width: 230px;
             margin-bottom: 40px; } }
         section.how .how-items .how-item:nth-of-type(1) .how-item-title h4 {
           color: #213338;
-          font-family: 'Roboto', sans-serif;
-          font-size: 22px;
-          font-weight: 900;
+          font-family: AktivGrotesk-XBold;
+          font-size: 18px;
+          font-weight: 400;
           line-height: 1.17;
           text-align: center; }
       section.how .how-items .how-item:nth-of-type(2) .how-item-title {
-        margin-top: 220px;
+        margin-top: 240px;
         margin-left: 40px; }
         @media (max-width: 1024px) {
           section.how .how-items .how-item:nth-of-type(2) .how-item-title {
@@ -539,21 +566,27 @@ section.how {
             margin-bottom: 10px; } }
         section.how .how-items .how-item:nth-of-type(2) .how-item-title h4 {
           color: #213338;
-          font-family: 'Roboto', sans-serif;
-          font-size: 22px;
-          font-weight: 900;
+          font-family: AktivGrotesk-XBold;
+          font-size: 18px;
+          font-weight: 400;
           line-height: 1.17;
           text-align: center; }
-      @media (max-width: 768px) {
-        section.how .how-items .how-item:nth-of-type(3) .how-item-title {
-          margin-top: 20px; } }
-      section.how .how-items .how-item:nth-of-type(3) .how-item-title h4 {
-        color: #213338;
-        font-family: 'Roboto', sans-serif;
-        font-size: 22px;
-        font-weight: 900;
-        line-height: 1.17;
-        text-align: center; }
+      section.how .how-items .how-item:nth-of-type(3) .how-item-title {
+        margin-top: 20px;
+        margin-left: 40px; }
+        @media (max-width: 768px) {
+          section.how .how-items .how-item:nth-of-type(3) .how-item-title {
+            margin-top: 20px; } }
+        @media (max-width: 768px) {
+          section.how .how-items .how-item:nth-of-type(3) .how-item-title {
+            margin-left: 0; } }
+        section.how .how-items .how-item:nth-of-type(3) .how-item-title h4 {
+          color: #213338;
+          font-family: AktivGrotesk-XBold;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.17;
+          text-align: center; }
 
 section.get {
   position: relative;
@@ -571,9 +604,9 @@ section.get {
       margin-bottom: 10px; }
       section.get .get-description .get-description-title h3 {
         color: #97f6ff;
-        font-family: 'Roboto', sans-serif;
+        font-family: AktivGrotesk-XBold;
         font-size: 51px;
-        font-weight: 900;
+        font-weight: 400;
         text-align: center; }
   section.get .get-description-par {
     display: -webkit-box;
@@ -585,10 +618,13 @@ section.get {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 10px; }
+    @media (max-width: 375px) {
+      section.get .get-description-par {
+        padding: 5px 10px; } }
     section.get .get-description-par p {
       color: #ffffff;
-      font-family: 'Roboto', sans-serif;
-      font-size: 23px;
+      font-family: AktivGrotesk-Regular;
+      font-size: 25px;
       font-weight: 500; }
   section.get .get-description-elements {
     display: -webkit-box;
@@ -639,9 +675,8 @@ section.get {
           margin-bottom: 20px; } }
       section.get .get-description-elements .get-element-item span {
         color: #ff9592;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        font-weight: 900; }
+        font-family: AktivGrotesk-XBold;
+        font-size: 26px; }
         @media (max-width: 414px) {
           section.get .get-description-elements .get-element-item span {
             font-size: 16px; } }
@@ -668,6 +703,9 @@ section.get {
       @media (max-width: 414px) {
         section.get .get-background-img img {
           top: 520px; } }
+      @media (max-width: 375px) {
+        section.get .get-background-img img {
+          top: 570px; } }
   section.get .get-buy-amazon {
     position: absolute;
     top: 800px;
@@ -751,16 +789,22 @@ section.order {
       section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item {
         margin-top: 35px;
         width: 360px; }
+        @media (max-width: 320px) {
+          section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item {
+            width: 260px; } }
         section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item span {
           color: #213338;
           font-family: 'Roboto', sans-serif;
-          font-size: 30px; }
+          font-size: 23px; }
           @media (max-width: 1024px) {
             section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item span {
               font-size: 20px; } }
           @media (max-width: 1024px) {
             section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item span {
               font-size: 16px; } }
+          @media (max-width: 767px) {
+            section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item span {
+              font-size: 11px; } }
           @media (max-width: 414px) {
             section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item span {
               display: -webkit-box;
@@ -783,15 +827,21 @@ section.order {
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center; } }
-          @media (max-width: 1024px) {
-            section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
-              width: 80%; } }
-          @media (max-width: 768px) {
-            section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
-              width: 70%; } }
-          @media (max-width: 414px) {
-            section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
-              width: 100px; } }
+          section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
+            margin-left: 33px; }
+            @media (max-width: 1024px) {
+              section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
+                width: 80%; } }
+            @media (max-width: 768px) {
+              section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
+                width: 70%; } }
+            @media (max-width: 767px) {
+              section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
+                width: 50%;
+                margin-top: 20px; } }
+            @media (max-width: 414px) {
+              section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(2) img {
+                width: 100px; } }
         @media (max-width: 414px) {
           section.order .order-featured .order-featured-item-wrapper:nth-child(1) .order-featured-item:nth-child(3) {
             display: -webkit-box;
@@ -866,7 +916,7 @@ section.order {
             width: 90%; } }
         @media (max-width: 768px) {
           section.order .order-now .order-now-game img {
-            width: 400px;
+            width: 360px;
             height: 300px; } }
     section.order .order-now .order-now-amazon {
       width: 50%;
@@ -883,28 +933,39 @@ section.order {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center; }
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      margin-left: 110px; }
+      @media (max-width: 1024px) {
+        section.order .order-now .order-now-amazon {
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-left: 0; } }
       section.order .order-now .order-now-amazon .order-amazon-title h3 {
         color: #213338;
-        font-family: 'Roboto', sans-serif;
-        font-size: 60px;
+        ont-family: AktivGrotesk-XBold;
+        font-size: 58px;
         font-weight: 900; }
         @media (max-width: 768px) {
           section.order .order-now .order-now-amazon .order-amazon-title h3 {
             text-align: center; } }
+      @media (max-width: 767px) {
+        section.order .order-now .order-now-amazon .order-amazon-description {
+          text-align: center; } }
       @media (max-width: 414px) {
         section.order .order-now .order-now-amazon .order-amazon-description {
           text-align: center; } }
       section.order .order-now .order-now-amazon .order-amazon-description span {
         color: #213338;
-        font-family: 'Roboto', sans-serif;
+        font-family: AktivGrotesk-Light;
         font-size: 25px; }
       section.order .order-now .order-now-amazon .order-amazon-price span {
         color: #eb1f23;
-        font-family: 'PT Serif', serif;
+        font-family: Georgia;
         font-weight: 700;
         font-style: italic; }
       section.order .order-now .order-now-amazon .order-amazon-price .currency {
@@ -962,9 +1023,9 @@ section.form-order {
         margin-bottom: 5px; }
         section.form-order .form-order-bg-wrapper .form-order-bg .form-order-title h4 {
           color: #ff9592;
-          font-family: 'Roboto', sans-serif;
-          font-size: 35px;
-          font-weight: 900; }
+          font-family: AktivGrotesk-XBold;
+          font-size: 33px;
+          font-weight: 400; }
           @media (max-width: 1024px) {
             section.form-order .form-order-bg-wrapper .form-order-bg .form-order-title h4 {
               font-size: 33px;
@@ -979,8 +1040,8 @@ section.form-order {
             margin-bottom: 10px; } }
         section.form-order .form-order-bg-wrapper .form-order-bg .form-order-description p {
           color: #ffffff;
-          font-family: 'Roboto', sans-serif;
-          font-size: 21px;
+          font-family: AktivGrotesk-Light;
+          font-size: 22px;
           line-height: 1.25;
           text-align: center; }
           @media (max-width: 1024px) {
@@ -1120,14 +1181,34 @@ footer {
     margin-bottom: 20px; }
     footer .footer-title h4 {
       color: #213338;
-      font-family: 'Roboto', sans-serif;
-      font-size: 32px;
-      font-weight: 900;
+      font-family: AktivGrotesk-XBold;
+      font-size: 28px;
+      font-weight: 400;
       text-align: center; }
   footer .footer-description p {
     color: #000000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-family: AktivGrotesk-Regular;
+    font-size: 20px;
     line-height: 1.25;
     text-align: center;
     margin-bottom: 10px; }
+
+@font-face {
+  font-family: AktivGrotesk-Black;
+  src: url(../fonts/AktivGrotesk-Black.otf); }
+
+@font-face {
+  font-family: AktivGrotesk-Light;
+  src: url(../fonts/AktivGrotesk-Light.otf); }
+
+@font-face {
+  font-family: AktivGrotesk-Medium;
+  src: url(../fonts/AktivGrotesk-Medium.otf); }
+
+@font-face {
+  font-family: AktivGrotesk-Regular;
+  src: url(../fonts/AktivGrotesk-Regular.otf); }
+
+@font-face {
+  font-family: AktivGrotesk-XBold;
+  src: url(../fonts/AktivGrotesk-XBold.otf); }

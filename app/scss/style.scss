@@ -39,3 +39,34 @@ p {
 
 
 @import "index-style";
+
+@font-face {
+	font-family: AktivGrotesk-Black;
+	src: url(../fonts/AktivGrotesk-Black.otf);
+}
+
+@font-face {
+	font-family: AktivGrotesk-Light;
+	src: url(../fonts/AktivGrotesk-Light.otf);
+}
+
+@font-face {
+	font-family: AktivGrotesk-Medium;
+	src: url(../fonts/AktivGrotesk-Medium.otf);
+}
+
+@font-face {
+	font-family: AktivGrotesk-Regular;
+	src: url(../fonts/AktivGrotesk-Regular.otf);
+}
+
+@font-face {
+	font-family: AktivGrotesk-XBold;
+	src: url(../fonts/AktivGrotesk-XBold.otf);
+}
+//font-family: AktivGrotesk-Black;
+//font-family: AktivGrotesk-Light;
+//font-family: AktivGrotesk-Medium;
+//font-family: AktivGrotesk-Regular;
+//font-family: AktivGrotesk-XBold;
+//font-family: Georgia;
